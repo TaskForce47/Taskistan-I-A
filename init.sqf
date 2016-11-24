@@ -132,7 +132,7 @@ if(HC1Present && isMultiplayer) then {
 
 //[] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
 
-_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
+//_igiload = execVM "IgiLoad\IgiLoadInit.sqf"; <- fliegt raus.
 //Service Points by [TF47] DerZade
 //[] execVM "Zade_ServicePoint\ServicePoint_Init.sqf";
 //Should the UMenu be enabled? Params: [showTickets (BOOL)]
