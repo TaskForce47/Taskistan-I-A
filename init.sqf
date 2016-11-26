@@ -80,7 +80,7 @@ if(HC1Present && isMultiplayer) then {
 // };
 
 
-// [false,"ColorBlufor","ColorGreen","ColorOrange"] call TF47_UMenu_fnc_EnableUMenu;
+// [false,"ColorBlufor","ColorGreen","ColorOrange"] [] call tf47_core_umenu_ft_fnc_enableMenu;
 #include "ZadeServicePoint\include\init.hpp"
 
 

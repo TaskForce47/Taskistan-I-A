@@ -58,7 +58,7 @@ corpseRemovalMaxTime = 120;								// Max time before removal
 
 //#include "tf47CoreScripts\UMenu\Description.hpp"
 
-#include "ZadeServicePoint\include\description.hpp"
+#include "tf47corescripts\umenu\Dialogs.hpp"
 
 //#include "VVS\menu.h"
 
@@ -88,7 +88,7 @@ class CfgFunctions
 //{
 //	#include "scripts\vehicle\crew\namesleft.hpp"	// Occupants HUD for vehicles
 //};
-#include "tf47corescripts\umenu\Dialogs.hpp"
+//#include "tf47corescripts\umenu\Dialogs.hpp"
 class faction {
 	#include "scripts\misc\factionResistance.hpp"
 };
