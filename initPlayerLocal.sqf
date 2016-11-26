@@ -206,8 +206,6 @@ supplySpawnSign addAction ["<t color='#00FF00'>Explosive Box</t>", "_this spawn 
 TF47_UMenu_isEnabled = true;
 publicVariable "TF47_UMenu_isEnabled";
 
-hint str TF47_UMenu_isEnabled;
-
 sleep 5;
 
 #include "tf47CoreScripts\umenu\Includes\initPlayerLocal.sqf";
