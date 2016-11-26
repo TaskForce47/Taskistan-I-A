@@ -87,7 +87,7 @@ while { count _targetArray > 0 } do {
 
 	//-----------------------------------------------Spawn minefield
 	
-	_chance = random 0;
+	_chance = 0;
 	if (_chance < PARAMS_RadioTowerMineFieldChance) then {
 	
 		_unitsArray = [_flatPos] call QS_fnc_AOminefield;
