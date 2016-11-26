@@ -42,47 +42,36 @@ _typeMarker =  [["b_inf","Infantry"],["b_recon","Recon"],["b_mortar","Mortar"],
 _slotName = format ["%1", player];
 
 _typeArrays = switch true do {
-	case (["mc", _slotName] call BIS_fnc_inString): {
+	case (["UnitNATO_AH", _slotName] call BIS_fnc_inString): {
+		[[["b_air","Helicopter (Attack)"]],["MANTICORE","FIREFLY"]];
+	};	
+	case (["UnitNATO_AFW", _slotName] call BIS_fnc_inString): {
+		[[["b_plane","Plane (Attack)"]],["THUNDERBIRD","HAWK","EAGLE"]];
+	};	
+	case ((["UnitNATO_DC", _slotName] call BIS_fnc_inString) || (["UnitNATO_CO", _slotName] call BIS_fnc_inString)): {
 		[[["b_hq","Headquarters"]],["GODFATHER","TOPMAN","TOWER"]];
 	};
-	case ((["alpha", _slotName] call BIS_fnc_inString) || (["bravo", _slotName] call BIS_fnc_inString) || (["charlie", _slotName] call BIS_fnc_inString)): {
+	case ((["UnitNATO_A", _slotName] call BIS_fnc_inString) || (["UnitNATO_B", _slotName] call BIS_fnc_inString) || (["UnitNATO_C", _slotName] call BIS_fnc_inString) || (["UnitNATO_ENG", _slotName] call BIS_fnc_inString)): {
 		[[["b_inf","Infantry"],["b_mortar","Mortar"],["b_support","Support"],["b_med", "Medical Support"]],[]];
 	};
-	case (["armor", _slotName] call BIS_fnc_inString): {
-		[[["b_armor","Tank"]],["RHINO-01","RHINO-02","LION-01","LION-02","FROG-01"]];
-	};
-	case (["fixwt", _slotName] call BIS_fnc_inString): {
-		[[["b_plane","Plane (Trans.)"]],["ALBATROS"]];
-	};	
-	case (["fixwa", _slotName] call BIS_fnc_inString): {
-		[[["b_plane","Plane (Attack.)"]],["HOG","FALCON"]];
-	};	
-	case (["rotwt4", _slotName] call BIS_fnc_inString): {
-		[[["b_air","Helicopter (Trans.)"]],["DUSTOFF"]];
-	};	
-	case (["rotwt2", _slotName] call BIS_fnc_inString): {
-		[[["b_air","Helicopter (Trans.)"]],["PELICAN"]];
-	};	
-	case (["dive", _slotName] call BIS_fnc_inString): {
-		[[["b_naval","Naval"]],[]];
-	};		
-	case (["ghost", _slotName] call BIS_fnc_inString): {
+	case (["UnitNATO_ST", _slotName] call BIS_fnc_inString): {
 		[[["b_recon","Recon"]],[]];
-	};	
-	case (["rotwt1", _slotName] call BIS_fnc_inString): {
-		[[["b_air","Helicopter (Trans.)"]],["RAVEN"]];
-	};		
-	case (["rotwt3", _slotName] call BIS_fnc_inString): {
-		[[["b_air","Helicopter (Trans.)"]],["BUTTERFLY"]];
-	};	
-	case (["rotwa2", _slotName] call BIS_fnc_inString): {
-		[[["b_air","Helicopter (Attack.)"]],["FIREFLY"]];
-	};	
-	case (["rotwa1", _slotName] call BIS_fnc_inString): {
-		[[["b_air","Helicopter (Attack.)"]],["MANTICORE"]];
-	};	
+	};
+	case (["UnitNATO_IFV", _slotName] call BIS_fnc_inString): {
+		[[["b_mech_inf","IFV"]],["LION-01","LION-02","FROG-01"]];
+	};
+	case (["UnitNATO_TNK", _slotName] call BIS_fnc_inString): {
+		[[["b_armor","Tank"]],["RHINO-01","RHINO-02"]];
+	};
+	case (["UnitNATO_TH", _slotName] call BIS_fnc_inString): {
+		[[["b_air","Helicopter (Trans.)"],["b_plane","Plane (Trans.)"]],["RAVEN","DUCK","DUSTOFF","BUTTERFLY-01","BUTTERFLY-02","PELICAN","CROW","SEAGULL","ALBATROS"]];
+	};
 	case (["arty", _slotName] call BIS_fnc_inString): {
 		[[["b_art","Artillery"]],["SCORPION"]];
+	};
+	default
+	{
+		[[["b_inf","Infantry"],["b_mortar","Mortar"],["b_support","Support"],["b_med", "Medical Support"]],[]];
 	};
 };
 

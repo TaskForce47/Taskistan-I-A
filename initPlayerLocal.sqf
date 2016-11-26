@@ -57,10 +57,10 @@ _null = [] execVM "scripts\misc\diary.sqf";										// diary tabs
 if (isMultiplayer) then {_null = [_this select 0] execVM "scripts\tf47\checkTFAR.sqf";};							//check if TFAR is enabled
 //_null = [] execVM "scripts\icons.sqf";										// blufor map tracker
 
-waituntil {!	(isnull (finddisplay 46)	)	&& !(isNil "player") };
+//waituntil {!	(isnull (finddisplay 46)	)	&& !(isNil "player") };
 
 //[player] spawn TF47_UMenu_fnc_initPlayerLocal;
-#include "ZadeServicePoint\include\initPlayerLocal.hpp"
+#include "ZadeServicePoint\include\initPlayerLocal.hpp";
 
 
 _player = _this select 0;
@@ -204,6 +204,9 @@ supplySpawnSign addAction ["<t color='#00FF00'>Explosive Box</t>", "_this spawn 
 [[M119_2,"M119_2"],"setVehicleVarname",true] call BIS_fnc_MP;
 
 TF47_UMenu_isEnabled = true;
+publicVariable "TF47_UMenu_isEnabled";
+
+hint str TF47_UMenu_isEnabled;
 
 sleep 5;
 
