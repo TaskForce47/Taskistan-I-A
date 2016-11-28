@@ -917,7 +917,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={12902.32,664.48145,2368.7356};
-			name="M_SquadMarker";
+			name="tf47_core_umenu_ft_startmarker";
 			type="Empty";
 			id=1390;
 			atlOffset=137.02277;
