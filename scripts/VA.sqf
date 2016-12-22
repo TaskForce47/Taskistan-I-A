@@ -8,7 +8,6 @@
 #define FRIENDLY_SIDE 6
 #define LOGIC_SIDE 7
 
-private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 //if (isServer) then {
 {
 
@@ -16,7 +15,7 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 	// The box should have "this execVM <scriptname>" in it's init field.
 	//_box = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 	_box = _x;
-	// Check if @XLA_FixedArsenal is loaded
+// Check if @XLA_FixedArsenal is loaded
 
 		[_box, [
 
@@ -27,6 +26,7 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"UK3CB_BAF_L131A1",
 			"rhsusf_weap_m9",
 			"rhsusf_weap_glock17g4",
+			"BWA3_MP7",
 			
 			//LAUNCHER
 			"rhs_weap_fim92",
@@ -54,6 +54,9 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"UK3CB_BAF_Tripod",
 
 			"UK3CB_BAF_NLAW_Launcher",
+			"BWA3_Pzf3",
+			"BWA3_RGW90",
+			"BWA3_Fliegerfaust",
 
 			//PRIMARY
 
@@ -110,7 +113,38 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"rhs_weap_m27iar",
 			"arifle_SDAR_F",
 			"SMG_01_F",
+			"BWA3_G36K",
+			"BWA3_G36",
+			"BWA3_G36_AG",
+			"BWA3_G36K_AG",
+			"BWA3_G38",
+			"BWA3_G38K",
+			"BWA3_G38C",
+			"BWA3_G38_AG",
+			"BWA3_G38K_AG",
+			"BWA3_G38_Tan",
+			"BWA3_G38_AG_Tan",
+			"BWA3_G38K_Tan",
+			"BWA3_G38K_AG_Tan",
+			"BWA3_G38C_Tan",
+			"BWA3_G28_Standard",
+			"BWA3_G28_Assault",
+			"BWA3_G27",
+			"BWA3_G27_Tan",
+			"BWA3_G27_AG",
+			"BWA3_G27_Tan_AG",
+			"BWA3_MG4",
+			"BWA3_MG5",
+			"BWA3_MG5_Tan",
+			"BWA3_G82",
+			"BWA3_P8",
+			"BWA3_MP7",
 			
+
+			"hlc_lmg_mg42kws_b",
+			"hlc_lmg_mg42kws_g",
+			"hlc_lmg_MG42KWS_t",
+
 			"UK3CB_BAF_L110A2",
   			"UK3CB_BAF_L110A2_FIST",
   			"UK3CB_BAF_L115A3_Desert",
@@ -135,6 +169,8 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
   			"UK3CB_BAF_L86A2",
   			"UK3CB_BAF_L92A1",
   			"UK3CB_BAF_L91A1"
+			
+			
 
 
 		],false, true] call xla_fnc_addVirtualWeaponCargo;
@@ -159,10 +195,10 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			// "tf47_at4_m_HEAT",
 			// "tf47_at4_m_HEDP",
 			// "tf47_at4_m_HP",
-			"tf47​​_smaw_heaa",
+			"tf47??_smaw_heaa",
 			"tf47_smaw_hedp",
-			"tf47_smaw_sr​",
-			"tf47_smaw_sr​_",
+			"tf47_smaw_sr?",
+			"tf47_smaw_sr?_",
 			"tf47_smaw_HEAA",
 			"tf47_smaw_HEDP",
 			"tf47_smaw_SR",
@@ -225,25 +261,77 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			
 			"30Rnd_45ACP_Mag_SMG_01",
 			
-			"UK3CB_BAF_100Rnd",
-			"UK3CB_BAF_100Rnd_T",
-			"UK3CB_BAF_200Rnd",
-			"UK3CB_BAF_200Rnd_T",
-			"UK3CB_BAF_L115A3_Mag",
-			"UK3CB_BAF_L128A1_Slugs",
-			"UK3CB_BAF_L128A1_Pellets",
-			"UK3CB_BAF_20Rnd",
-			"UK3CB_BAF_20Rnd_T",
-			"UK3CB_BAF_75Rnd",
-			"UK3CB_BAF_75Rnd_T",
-			"UK3CB_BAF_10Rnd_127x99mm",
-			"UK3CB_BAF_10Rnd_127x99mm_SLAP",
-			"5Rnd_127x108_Mag",
-			"5Rnd_127x108_APDS_Mag",
-			"UK3CB_BAF_30Rnd",
-			"UK3CB_BAF_30Rnd_T",
-			"UK3CB_BAF_30Rnd_9mm",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_Blank",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_Blank",
+			"UK3CB_BAF_762_100Rnd_T",
+			"UK3CB_BAF_556_100Rnd",
+			"UK3CB_BAF_556_100Rnd_Blank",
+			"UK3CB_BAF_556_100Rnd_T",
+			"UK3CB_BAF_556_200Rnd",
+			"UK3CB_BAF_556_200Rnd_Blank",
+			"UK3CB_BAF_556_200Rnd_T",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd_Blank",
+			"UK3CB_BAF_762_L42A1_20Rnd_T",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Pellets",
+			"UK3CB_BAF_127_10Rnd",
+			"UK3CB_BAF_127_10Rnd_AP",
+			"UK3CB_BAF_127_100Rnd",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_30Rnd",
 
+			"BWA3_10Rnd_762x51_G28",
+			"BWA3_10Rnd_762x51_G28_Tracer",
+			"BWA3_10Rnd_762x51_G28_Tracer_Dim",
+			"BWA3_10Rnd_762x51_G28_SD",
+			"BWA3_10Rnd_762x51_G28_AP",
+			"BWA3_10Rnd_762x51_G28_LR",
+			"BWA3_20Rnd_762x51_G28",
+			"BWA3_20Rnd_762x51_G28_Tracer",
+			"BWA3_20Rnd_762x51_G28_Tracer_Dim",
+			"BWA3_20Rnd_762x51_G28_SD",
+			"BWA3_20Rnd_762x51_G28_AP",
+			"BWA3_200Rnd_556x45",
+			"BWA3_200Rnd_556x45_Tracer",
+			"BWA3_120Rnd_762x51",
+			"BWA3_120Rnd_762x51_Tracer",
+			"BWA3_1200Rnd_762x51",
+			"BWA3_10Rnd_127x99_G82",
+			"BWA3_10Rnd_127x99_G82_Tracer",
+			"BWA3_10Rnd_127x99_G82_Tracer_Dim",
+			"BWA3_10Rnd_127x99_G82_SD",
+			"BWA3_10Rnd_127x99_G82_AP",
+			"BWA3_10Rnd_127x99_G82_AP_Tracer",
+			"BWA3_10Rnd_127x99_G82_Raufoss",
+			"BWA3_10Rnd_127x99_G82_Raufoss_Tracer",
+			"BWA3_10Rnd_127x99_G82_Raufoss_Tracer_Dim",
+			"BWA3_15Rnd_9x19_P8",
+			"BWA3_40Rnd_46x30_MP7",
+			"BWA3_40Rnd_46x30_MP7_SD",
+			"BWA3_30Rnd_556x45_G36",
+			"BWA3_30Rnd_556x45_G36_Tracer",
+			"BWA3_30Rnd_556x45_G36_Tracer_Dim",
+			"BWA3_30Rnd_556x45_G36_SD",
+			"BWA3_30Rnd_556x45_G36_AP",
+			"BWA3_100Rnd_556x45_G36",
+			"BWA3_100Rnd_556x45_G36_Tracer",
+			
+			"hlc_50Rnd_792x57_B_MG42",
+			"hlc_50Rnd_792x57_M_MG42",
+			"hlc_50Rnd_792x57_T_MG42",
+			"hlc_100Rnd_792x57_B_MG42",
+			"hlc_100Rnd_792x57_M_MG42",
+			"hlc_100Rnd_792x57_T_MG42",
+			"hlc_200Rnd_792x57_B_MG42",
+			"hlc_200Rnd_792x57_M_MG42",
+			"hlc_200Rnd_792x57_T_MG42",
+			"hlc_50Rnd_792x57_AP_MG42",
+			"hlc_100Rnd_792x57_AP_MG42",
+			"hlc_200Rnd_792x57_AP_MG42",
 					
 
 			//ULG Ammo
@@ -360,7 +448,25 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",
 
 			"UK3CB_BAF_B_Bergen_MTP_Sapper_H_A",
-			"UK3CB_BAF_B_Bergen_MTP_Sapper_L_A"
+			"UK3CB_BAF_B_Bergen_MTP_Sapper_L_A",
+			
+			"BWA3_AssaultPack_Fleck",
+			"BWA3_Kitbag_Fleck",
+			"BWA3_Kitbag_Fleck_Medic",
+			"BWA3_TacticalPack_Fleck",
+			"BWA3_TacticalPack_Fleck_Medic",
+			"BWA3_FieldPack_Fleck",
+			"BWA3_Carryall_Fleck",
+			"BWA3_PatrolPack_Fleck",
+			"BWA3_AssaultPack_Tropen",
+			"BWA3_Kitbag_Tropen",
+			"BWA3_Kitbag_Tropen_Medic",
+			"BWA3_TacticalPack_Tropen",
+			"BWA3_TacticalPack_Tropen_Medic",
+			"BWA3_FieldPack_Tropen",
+			"BWA3_Carryall_Tropen",
+			"BWA3_PatrolPack_Tropen"
+			
 
 		], false, true] call xla_fnc_addVirtualBackpackCargo;
 
@@ -397,6 +503,24 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"UK3CB_BAF_U_CrewmanCoveralls_RTR",
 			"UK3CB_BAF_U_HeliPilotCoveralls_RAF",
 			"UK3CB_BAF_U_HeliPilotCoveralls_RN",
+			
+			"BWA3_Uniform_idz_Fleck",
+			"BWA3_Uniform2_idz_Fleck",
+			"BWA3_Uniform3_idz_Fleck",
+			"BWA3_Uniform_Ghillie_idz_Fleck",
+			"BWA3_Uniform_Fleck",
+			"BWA3_Uniform2_Fleck",
+			"BWA3_Uniform_Ghillie_Fleck",
+			"BWA3_Uniform_Crew_Fleck",
+			"BWA3_Uniform_idz_Tropen",
+			"BWA3_Uniform2_idz_Tropen",
+			"BWA3_Uniform3_idz_Tropen",
+			"BWA3_Uniform_Ghillie_idz_Tropen",
+			"BWA3_Uniform_Tropen",
+			"BWA3_Uniform2_Tropen",
+			"BWA3_Uniform_Ghillie_Tropen",
+			"BWA3_Uniform_Crew_Tropen",
+			"BWA3_Uniform_Helipilot ",
 
 			//VESTS
 			"rhsusf_spc",
@@ -510,6 +634,24 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"rhsusf_opscore_rg_cover",
 			"rhsusf_opscore_rg_cover_pelt",
 			"rhsusf_opscore_ut",
+			
+			"BWA3_Vest_Fleck",
+			"BWA3_Vest_Rifleman1_Fleck",
+			"BWA3_Vest_Autorifleman_Fleck",
+			"BWA3_Vest_Grenadier_Fleck",
+			"BWA3_Vest_Medic_Fleck",
+			"BWA3_Vest_Marksman_Fleck",
+			"BWA3_Vest_Leader_Fleck",
+			"BWA3_Vest_Tropen",
+			"BWA3_Vest_Rifleman1_Tropen",
+			"BWA3_Vest_Autorifleman_Tropen",
+			"BWA3_Vest_Grenadier_Tropen",
+			"BWA3_Vest_Medic_Tropen",
+			"BWA3_Vest_Marksman_Tropen",
+			"BWA3_Vest_Leader_Tropen",
+			"BWA3_G_Combat_Orange",
+			"BWA3_G_Combat_Black",
+			"BWA3_G_Combat_Clear",
 
 			//HEADGEAR
 			"rhsusf_ach_helmet_M81",
@@ -559,6 +701,36 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"rhsusf_patrolcap_ucp",
 			"H_PilotHelmetFighter_B",
 			"tf47_beret",
+		
+			"BWA3_OpsCore_Fleck",
+			"BWA3_OpsCore_Fleck_Patch",
+			"BWA3_OpsCore_Fleck_Camera",
+			"BWA3_CrewmanKSK_Fleck",
+			"BWA3_CrewmanKSK_Fleck_Headset",
+			"BWA3_MICH_Fleck",
+			"BWA3_M92_Fleck",
+			"BWA3_Booniehat_Fleck",
+			"BWA3_OpsCore_Tropen",
+			"BWA3_OpsCore_Tropen_Patch",
+			"BWA3_OpsCore_Tropen_Camera",
+			"BWA3_CrewmanKSK_Tropen",
+			"BWA3_CrewmanKSK_Tropen_Headset",
+			"BWA3_MICH_Tropen",
+			"BWA3_M92_Tropen",
+			"BWA3_Booniehat_Tropen",
+			"BWA3_OpsCore_Schwarz",
+			"BWA3_OpsCore_Schwarz_Camera",
+			"BWA3_CrewmanKSK_Schwarz",
+			"BWA3_CrewmanKSK_Schwarz_Headset",
+			"BWA3_Knighthelm",
+			"BWA3_Beret_PzGren",
+			"BWA3_Beret_Pz",
+			"BWA3_Beret_PzAufkl",
+			"BWA3_Beret_Jaeger",
+			"BWA3_Beret_Falli",
+			"BWA3_Beret_HFlieger",
+			"BWA3_Beret_Wach_Gruen",
+			"BWA3_Beret_Wach_Blau",
 
 			"UK3CB_BAF_B_Bergen_MTP_SL_H_A",
   			"UK3CB_BAF_B_Bergen_MTP_SL_L_A",
@@ -686,6 +858,7 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"ACE_RangeTable_82mm",
 			"ACE_microDAGR",
 			"ACE_bodyBag",
+			"ACE_EntrenchingTool",
 			"ACE_surgicalKit",
 			"ACE_personalAidKit",
 			"ACE_quikclot",
@@ -785,6 +958,26 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
   			"rhsusf_acc_M2010S",
   			"optic_NVS",
   			"optic_Holosight_smg",
+			
+			"BWA3_optic_RSAS",
+			"BWA3_optic_Aimpoint",
+			"BWA3_optic_EOTech",
+			"BWA3_optic_EOTech_tan",
+			"BWA3_optic_EOTech_Mag_Off",
+			"BWA3_optic_EOTech_Mag_On",
+			"BWA3_optic_EOTech_tan_Mag_Off",
+			"BWA3_optic_EOTech_tan_Mag_On",
+			"BWA3_optic_NSV80",
+			"BWA3_optic_ZO4x30",
+			"BWA3_optic_ZO4x30_NSV",
+			"BWA3_optic_ZO4x30_IRV",
+			"BWA3_optic_Shortdot",
+			"BWA3_optic_20x50",
+			"BWA3_optic_20x50_NSV",
+			"BWA3_optic_24x72",
+			"BWA3_optic_24x72_NSV",
+			"BWA3_optic_NSV600",
+			"BWA3_optic_NSA80",
 
 			//ATTACHMENTS
 			"tf47_optic_m3maaws",
@@ -795,11 +988,19 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 			"tf47_smaw_optic","tf47_optic_smaw",
 			"tf47_smaw_optic",
 			
+			"BWA3_acc_LLM01_irlaser",
+			"BWA3_acc_LLM01_flash",
+			"BWA3_acc_VarioRay_irlaser",
+			"BWA3_acc_VarioRay_flash",
+			"BWA3_muzzle_snds_G28",
+			"BWA3_muzzle_snds_MG4",
+			"BWA3_muzzle_snds_MG5",
 			
 			"optic_AMS",
 			"optic_LRPS",
 			"optic_KHS_blk",
 			"muzzle_snds_L"
+			
 
 
 		], false, true] call xla_fnc_addVirtualItemCargo;
@@ -811,5 +1012,5 @@ private _vaBoxes	= [arsenal1, arsenal2, arsenal3, arsenal4];
 		_addActionText = "<t color=""#11F22F"">" + "Arsenal";
 		["AmmoboxInit",[_box,false,{true},_addActionText,false]] spawn XLA_fnc_arsenal;
 
-} forEach _vaBoxes;
+} forEach [arsenal1, arsenal2, arsenal3, arsenal4];
 //};

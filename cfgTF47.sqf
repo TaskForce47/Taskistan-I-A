@@ -26,7 +26,7 @@ TF47_MISSIONID = 7;
 TF47_MISSIONINFO = "CO@XX Invade&Annex Altis";
 
 _pathtoscripts = "tf47CoreScripts\";
-f_var_debugMode = 0;
+
 // _infantryStaminaClass = "US_Delta_Force_EP1";
 
 // --- DESPAWN PREVENTION MARKERS -------------------------------------------------------------------------------------------------------------------
