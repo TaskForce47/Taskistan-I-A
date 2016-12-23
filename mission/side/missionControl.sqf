@@ -28,7 +28,7 @@ _missionList = [
 	"HQind",
 	"HQresearch",
 	"priorityAA",	
-	"priorityARTY",
+	//"priorityARTY",
 	"secureChopper",
 	"secureIntelUnit",
 	"secureIntelVehicle",
