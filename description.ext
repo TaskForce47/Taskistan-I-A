@@ -1,7 +1,7 @@
 //------------------------- On Load
 
 author = "Rarek, Quicksilver edit by Taskforce 47 Dev Group";					// Visible when loading mission
-onLoadName = "I&A Altis 1.1";						// Visible when loading mission
+onLoadName = "I&A Takistan 1.1";						// Visible when loading mission
 OnLoadMission = "Join us on TeamSpeak at ts.armasim.de";
 loadScreen = "media\images\loading.paa";				// Visible when loading mission
 overviewPicture = "media\images\loading.paa";			// Visible when selecting mission	
