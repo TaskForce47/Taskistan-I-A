@@ -283,9 +283,9 @@
 			"UK3CB_BAF_127_100Rnd",
 			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_9_30Rnd",
-			"UK3CB_BAF_338_5Rnd," 
-            "UK3CB_BAF_338_5Rnd_Blank," 
-            "UK3CB_BAF_338_5Rnd_Tracer,"
+			"UK3CB_BAF_338_5Rnd", 
+            "UK3CB_BAF_338_5Rnd_Blank", 
+            "UK3CB_BAF_338_5Rnd_Tracer",
 			"UK3CB_BAF_338_Ball",
             "UK3CB_BAF_338_Ball_Tracer_Red", 
 

@@ -151,7 +151,7 @@ _null = [] execVM "scripts\VA.sqf";
 [[uav,"uav"],"setVehicleVarname",true] call BIS_fnc_MP;
 [[tank1,"tank1"],"setVehicleVarname",true] call BIS_fnc_MP;
 [[tank2,"tank2"],"setVehicleVarname",true] call BIS_fnc_MP;
-[[ifv,"ifv"],"setVehicleVarname",true] call BIS_fnc_MP;
+[[ifv1,"ifv1"],"setVehicleVarname",true] call BIS_fnc_MP;
 [[ifv2,"ifv2"],"setVehicleVarname",true] call BIS_fnc_MP;
 [[M119_1,"M119_1"],"setVehicleVarname",true] call BIS_fnc_MP;
 [[M119_2,"M119_2"],"setVehicleVarname",true] call BIS_fnc_MP;
