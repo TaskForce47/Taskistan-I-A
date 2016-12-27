@@ -129,54 +129,7 @@ hint "Drücke STRG + U für das U-Menü (Freq-Tracker, Viewdistance, BFT)! \n \n
 
 // Arsenal
 _null = [] execVM "scripts\VA.sqf";
-
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: Rifleman</t>", "scripts\tf47\loadouts\rifle.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: Rifleman (AT)</t>", "scripts\tf47\loadouts\lat.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: Grenadier</t>", "scripts\tf47\loadouts\gren.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: Combat First Responder</t>", "scripts\tf47\loadouts\cfr.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: Anti-Tank</t>", "scripts\tf47\loadouts\at.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: LMG</t>", "scripts\tf47\loadouts\lmg.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: MMG</t>", "scripts\tf47\loadouts\mmg.sqf"];
-loadoutSign addAction["<t color='#00FF00'>Basic Loadout: Assistant</t>", "scripts\tf47\loadouts\assist.sqf"];
-
-boxsign1 addAction ["<t color='#00FF00'>Default Mortar Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Combo"];
-boxsign1 addAction ["<t color='#00FF00'>HE Rounds Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_HE"];
-boxsign1 addAction ["<t color='#00FF00'>Illum Rounds Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Illum"];
-boxsign1 addAction ["<t color='#00FF00'>Smoke Rounds  Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Smoke"];
-boxsign1 addAction ["<t color='#00FF00'>Medical Supply Crate Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_medicalSupplyCrate_advanced"];
-boxsign1 addAction ["<t color='#00FF00'>Empty Box</t>", "scripts\tf47\spawnBox.sqf", "Box_NATO_Ammo_F"];
-boxsign1 addAction ["<t color='#00FF00'>Spare Wheel</t>", "scripts\tf47\spawnBox.sqf", "ACE_Wheel"];
-boxsign1 addAction ["<t color='#00FF00'>Spare Track</t>", "scripts\tf47\spawnBox.sqf", "ACE_Track"];
-
-boxsign2 addAction ["<t color='#00FF00'>Default Mortar Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Combo"];
-boxsign2 addAction ["<t color='#00FF00'>HE Rounds Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_HE"];
-boxsign2 addAction ["<t color='#00FF00'>Illum Rounds Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Illum"];
-boxsign2 addAction ["<t color='#00FF00'>Smoke Rounds  Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Smoke"];
-boxsign2 addAction ["<t color='#00FF00'>Medical Supply Crate Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_medicalSupplyCrate_advanced"];
-boxsign2 addAction ["<t color='#00FF00'>Empty Box</t>", "scripts\tf47\spawnBox.sqf", "Box_NATO_Ammo_F"];
-boxsign2 addAction ["<t color='#00FF00'>Spare Wheel</t>", "scripts\tf47\spawnBox.sqf", "ACE_Wheel"];
-boxsign2 addAction ["<t color='#00FF00'>Spare Track</t>", "scripts\tf47\spawnBox.sqf", "ACE_Track"];
-
-boxsign3 addAction ["<t color='#00FF00'>Default Mortar Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Combo"];
-boxsign3 addAction ["<t color='#00FF00'>HE Rounds Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_HE"];
-boxsign3 addAction ["<t color='#00FF00'>Illum Rounds Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Illum"];
-boxsign3 addAction ["<t color='#00FF00'>Smoke Rounds  Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_Box_82mm_Mo_Smoke"];
-boxsign3 addAction ["<t color='#00FF00'>Medical Supply Crate Box</t>", "scripts\tf47\spawnBox.sqf", "ACE_medicalSupplyCrate_advanced"];
-boxsign3 addAction ["<t color='#00FF00'>Empty Box</t>", "scripts\tf47\spawnBox.sqf", "Box_NATO_Ammo_F"];
-boxsign3 addAction ["<t color='#00FF00'>Spare Wheel</t>", "scripts\tf47\spawnBox.sqf", "ACE_Wheel"];
-boxsign3 addAction ["<t color='#00FF00'>Spare Track</t>", "scripts\tf47\spawnBox.sqf", "ACE_Track"];
-
-
-despawnSign addAction ["<t color='#00FF00'>Despawn container</t>", "scripts\tf47\despawn.sqf"];
-
-// supply box spawn
-supplySpawnSign addAction ["<t color='#00FF00'>Empty Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["Box_NATO_Ammo_F","emptyBox"]];
-supplySpawnSign addAction ["<t color='#00FF00'>Weapon Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["Box_NATO_Wps_F","weaponBox"]];
-supplySpawnSign addAction ["<t color='#00FF00'>AntiTank Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["Box_NATO_WpsLaunch_F","ATBox"]];
-supplySpawnSign addAction ["<t color='#00FF00'>AntiAir Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["Box_NATO_WpsLaunch_F","AABox"]];
-supplySpawnSign addAction ["<t color='#00FF00'>Ammo Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["Box_NATO_Ammo_F","AmmoBox"]];
-supplySpawnSign addAction ["<t color='#00FF00'>Medical Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["ACE_medicalSupplyCrate_advanced",""]];
-supplySpawnSign addAction ["<t color='#00FF00'>Explosive Box</t>", "_this spawn tf47_helper_fnc_spawnThing", ["Box_NATO_AmmoOrd_F",""]];
+// Hier Stand mal die AddActions für das MISFIT Loadout Spawnschild Dingens
 
 
 // _infoArray = squadParams player;    
